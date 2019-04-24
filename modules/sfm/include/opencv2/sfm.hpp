@@ -42,10 +42,8 @@
 #include <opencv2/sfm/numeric.hpp>
 #include <opencv2/sfm/projection.hpp>
 #include <opencv2/sfm/triangulation.hpp>
-#if CERES_FOUND
 #include <opencv2/sfm/reconstruct.hpp>
 #include <opencv2/sfm/simple_pipeline.hpp>
-#endif
 
 /** @defgroup sfm Structure From Motion
 

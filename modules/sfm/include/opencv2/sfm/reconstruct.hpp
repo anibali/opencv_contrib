@@ -55,8 +55,6 @@ namespace sfm
 //! @addtogroup reconstruction
 //! @{
 
-#if defined(CV_DOXYGEN) || defined(CERES_FOUND)
-
 /** @brief Reconstruct 3d points from 2d correspondences while performing autocalibration.
   @param points2d Input vector of vectors of 2d points (the inner vector is per image).
   @param Ps Output vector with the 3x4 projections matrices of each image.
@@ -130,8 +128,6 @@ CV_EXPORTS
 void
 reconstruct(const std::vector<String> images, OutputArray Rs, OutputArray Ts,
             InputOutputArray K, OutputArray points3d, bool is_projective = false);
-
-#endif /* CV_DOXYGEN || CERES_FOUND */
 
 //! @} sfm
 
